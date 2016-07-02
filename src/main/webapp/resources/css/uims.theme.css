@@ -1,0 +1,83 @@
+/*主题覆盖*/
+.navbar{border-radius:0;}
+.navbar-inverse{border-color:transparent;}
+
+.nav-stacked.nav-primary>li:first-child.nav-heading, .nav-stacked.nav-primary>li:first-child>a{border-radius:0;}
+.nav-stacked.nav-primary>li:last-child>a{border-radius:0;}
+
+.panel{border-radius:0;}
+.panel>.panel-heading{background-color:#fff;}
+
+.btn{border-radius:0;}
+.table{font-size:13px;}
+dd,dt{line-height:30px;}
+
+.navbar{
+border-radius:0;
+}
+.navbar-inverse{
+border-color:transparent;
+}
+.current-nav{
+  background:#fff;
+}
+.navbar-nav>li.current-nav>a {
+color: #145ccd;
+}
+.navbar-nav>li>a {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.main-content{
+max-width:1160px;
+margin:0 auto;
+}
+
+.main-content-login{
+	width:100%;
+	height:100%;
+}
+.login-box{
+	width:30%;
+	max-width:400px;
+	min-width:300px;
+	height:303px;
+	margin: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	
+}
+.login-box.panel{
+	border-radius:4px;
+}
+.login-box.panel>.panel-heading{
+	background-color:#3280fc;
+}
+
+.register-box{
+	width:30%;
+	max-width:400px;
+	min-width:300px;
+	height:403px;
+	margin: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+.register-box.panel{
+	border-radius:4px;
+}
+.register-box.panel>.panel-heading{
+	background-color:#3280fc;
+}
+
+
+.user-control-nav{margin-bottom: 20px;}
+.cursorhand{cursor:pointer;}
+.cursordefault{cursor:default;}
