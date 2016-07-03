@@ -16,56 +16,76 @@ public class Barrage {
     @Column(name="id")
 	private int id;
 	
-	//账号
-	@Column(name = "username",unique=true,nullable=false,length=18)
-	private String username;
-	//密码
-	@Column(name = "password",nullable=false,length=30)
-	private String password;
-	//姓名
-	@Column(name = "realname",length=16,nullable=false)
-	private String realname;
-	//邮箱
-	@Column(name = "email",nullable=false)
-	private String email;
-	//秘钥
-	@Column(name = "api_key",nullable=false)
+	//api_key
+	@Column(name = "api_key")
 	private String apiKey;
+	//是记录弹幕，还是获取弹幕
+	@Column(name = "type")
+	private String type;
+	//视频名称或地址
+	@Column(name = "video_name")
+	private String videoName;
+	//发送弹幕的用户
+	@Column(name = "barrage_user")
+	private String barrageUser;
+	//弹幕文字内容
+	@Column(name = "barrage_content")
+	private String barrageContent;
+	//发送弹幕时的视频时间
+	@Column(name = "barrage_sendtime")
+	private String barrageSendtime;
+	public Barrage(){}
+	public Barrage(String apiKey, String type, String videoName, String barrageUser, String barrageContent,
+			String barrageSendtime) {
+		super();
+		this.apiKey = apiKey;
+		this.type = type;
+		this.videoName = videoName;
+		this.barrageUser = barrageUser;
+		this.barrageContent = barrageContent;
+		this.barrageSendtime = barrageSendtime;
+	}
 	public int getId() {
 		return id;
 	}
 	public void setId(int id) {
 		this.id = id;
 	}
-	public String getUsername() {
-		return username;
-	}
-	public void setUsername(String username) {
-		this.username = username;
-	}
-	public String getPassword() {
-		return password;
-	}
-	public void setPassword(String password) {
-		this.password = password;
-	}
-	public String getRealname() {
-		return realname;
-	}
-	public void setRealname(String realname) {
-		this.realname = realname;
-	}
-	public String getEmail() {
-		return email;
-	}
-	public void setEmail(String email) {
-		this.email = email;
-	}
 	public String getApiKey() {
 		return apiKey;
 	}
 	public void setApiKey(String apiKey) {
 		this.apiKey = apiKey;
+	}
+	public String getType() {
+		return type;
+	}
+	public void setType(String type) {
+		this.type = type;
+	}
+	public String getVideoName() {
+		return videoName;
+	}
+	public void setVideoName(String videoName) {
+		this.videoName = videoName;
+	}
+	public String getBarrageUser() {
+		return barrageUser;
+	}
+	public void setBarrageUser(String barrageUser) {
+		this.barrageUser = barrageUser;
+	}
+	public String getBarrageContent() {
+		return barrageContent;
+	}
+	public void setBarrageContent(String barrageContent) {
+		this.barrageContent = barrageContent;
+	}
+	public String getBarrageSendtime() {
+		return barrageSendtime;
+	}
+	public void setBarrageSendtime(String barrageSendtime) {
+		this.barrageSendtime = barrageSendtime;
 	}
 	
 }

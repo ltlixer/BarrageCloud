@@ -50,7 +50,7 @@ storage调用
    </tr>
    <tr>
       <td>type</td>
-      <td>是记录弹幕，还是获取弹幕</td>
+      <td>POST（存储弹幕），GET（获取弹幕）</td>
    </tr>
    <tr>
       <td>video_name</td>
