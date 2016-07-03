@@ -152,7 +152,7 @@
 													<td>发送弹幕的用户</td>
 												</tr>
 												<tr>
-													<td>发送弹幕的用户</td>
+													<td>barrage_content</td>
 													<td>弹幕文字内容</td>
 												</tr>
 												<tr>
